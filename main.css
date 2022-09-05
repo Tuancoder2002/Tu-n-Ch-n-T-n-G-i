@@ -1,0 +1,18 @@
+#first-heading {
+    color :rgb(251, 255, 0);
+    font-size: 50px;
+}
+#second-heading {
+    color :rgb(255, 0, 106);
+    font-size: 50px;
+}
+.thirt-heading{
+    color :rgb(205, 255, 192);
+    font-size: 20px;
+}
+:root {
+    --text-color:red; 
+}
+h1 {
+    color: var(--text-color);
+}

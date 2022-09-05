@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+        <!-- 
+        HTML
+            1. h1 - h6  -> heading -> tiêu đề 
+            2. p  -> Paragrap -> đoạn văn
+            3. jmp -> image -> hình ảnh
+            4. a -> anchor -> thẻ liên kết tới trang khác
+            5. ul, li -> unordered list = ds mẹ tùy ý sắp xếp thứ tự, list item = hiển thị ds con
+            6. table -> bảng (thead-> đầu bảng và tbody-> thân bảng)
+            7. input -> tạo ô text or nhiều thứ khác như tick chọn
+            8. button -> tạo 1 cái nút
+            9. div -> tạo 1 cái khối bao quanh
+            10.<h1 title="" >Attribute</h1> -> thuộc tính của html nằm trong thẻ mở
+        CSS
+            1. Internal -> sử dụng 1 cặp thẻ style đặt bên trong file html
+            2. External -> sử dụng 1 cặp thẻ link tạo ra 1 file bên ngoài
+            3. Inline -> viết vào trong dòng thẻ mở
+        CSS SELECTOR -> Nó là những cách gọi tới những phần tử trong html
+         id -> đặt tên đánh dấu thẻ vidu  <h1 id="Second-heading"> THẾ GIỚI DI ĐỘNG</h1>
+         Bên file css gõ #Second-heading { color : red ;} mỗi thẻ chỉ có 1 id riêng k trùng
+         class -> .thirt-heading { color: blue ;} mỗi thẻ sử dụng chung 1 class được
+         *{ } này thì tất cả các ông trong body vidu *{ color : red ;}
+        CSS Variable -> kỹ thuật đặt biến
+        vidu 
+        :root {
+    --text-color:red; h1 {
+    color: var(--text-color);
+}
+        -->
+<html>
+    <!-- Phần đầu -->
+    <head>
+            <title>Tuấn Trần</title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="main.css">
+            <!-- <style>
+                h1 {
+                  color: rgb(128, 0, 122); 
+                  font-size: 50px; 
+                }
+            </style> -->
+    </head>
+    <!-- Phần thân  -->
+    <body>
+       <div>
+            WELLCOME TO ! Mình là Tuấn
+            <h1 id="first-heading" title="Đây là trang chủ điện máy xanh"> ĐIỆN MÁY XANH </h1>
+            <h1 id="second-heading"> THẾ GIỚI DI ĐỘNG</h1>
+            <input type="text"> Bạn muốn hỏi gì không ? 
+
+            <button>Gửi</button>
+            <p> Thông báo chương trình mua sắm laptop dành cho sinh viên sắp kết thúc </p>
+            <img src="https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-6/272073874_1304318613397429_1590800557077091142_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Tf8ZHWWl444AX9yKjJI&_nc_ht=scontent.fsgn2-4.fna&oh=00_AT8BE9qDhIt4MMoq76E_DDUsjN-PExNIcqQBu7WnGZS7Wg&oe=6314C321" alt="Ảnh đại diện">   
+
+            <a href="https://www.facebook.com/tuancodedao">Click vào đây để tới trang facebook của tôi.</a>
+
+            <ul>
+                <li class="thirt-heading">Thông tin cá nhân</li>
+                <li class="thirt-heading">Quá trình học vấn</li>
+                <li class="thirt-heading">Tình trạng hôn nhân</li>
+            </ul>
+
+            <table>
+                <thead>
+                    <th>Tên</th>
+                    <th>SDT</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Trần Quốc Tuấn</td>
+                        <td>0868256755</td>
+                    </tr>                   
+                </tbody>
+            </table>
+
+       </div>
+    </body>
+
+
+</html>
